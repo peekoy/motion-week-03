@@ -14,7 +14,8 @@ class ContactsPage extends StatelessWidget {
         backgroundColor: Color(0xFFF6F6F6),
         title: Text("Contacts"),
         centerTitle: true,
-        leading: Center(
+        leading: TextButton(
+          onPressed: () {},
           child: Text(
             "Sort",
             textAlign: TextAlign.center,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'newchatspage/newchatspage.dart';
 
 void main() {
   runApp(ChatsPage());
@@ -14,7 +15,8 @@ class ChatsPage extends StatelessWidget {
         backgroundColor: Color(0xFFF6F6F6),
         title: Text("Chats"),
         centerTitle: true,
-        leading: Center(
+        leading: TextButton(
+          onPressed: () {},
           child: Text(
             "Edit",
             textAlign: TextAlign.center,
@@ -32,7 +34,11 @@ class ChatsPage extends StatelessWidget {
             color: Color(0xFF037EE5)
           ),
           IconButton(
-            onPressed: () {}, 
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const NewChats()
+              )
+            ), 
             icon: Icon(Icons.open_in_new),
             color: Color(0xFF037EE5),
           ),
