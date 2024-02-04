@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slicing_3/contacts/contacts.dart';
 
 void main() {
   runApp(NewChats());
@@ -14,8 +15,9 @@ class NewChats extends StatelessWidget {
         backgroundColor: Color(0xFFF6F6F6),
         title: Text("New Message"),
         centerTitle: true,
+        leadingWidth: 77,
         leading: TextButton(
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pop(),
           child: Text(
             "Cancel",
             textAlign: TextAlign.center,
@@ -28,7 +30,91 @@ class NewChats extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        
+        padding: EdgeInsets.all(16),
+        child: Column(
+          children: [
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+            ContactsCard(
+              image: "assets/images", 
+              name: "Faiz", 
+              lastseen: "last seen recently",
+            ),
+          ]
+        )
       ),
     );
   }
