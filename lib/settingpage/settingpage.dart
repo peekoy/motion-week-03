@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slicing_3/settingpage/editprofilepage/editprofilepage.dart';
 
 void main() {
   runApp(SettingPage());
@@ -21,7 +22,11 @@ class SettingPage extends StatelessWidget {
         ),
         actions: [
             TextButton(
-              onPressed: () {},
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const EditProfile()
+                )
+              ),
               child: Text(
                 "Edit",
                 textAlign: TextAlign.center,
